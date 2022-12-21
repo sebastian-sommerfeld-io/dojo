@@ -36,6 +36,3 @@ func Test_should_return_fizz_if_dividable_by_three_and_five(t *testing.T) {
 	assert.Equal(t, false, isDivisible(8, 5))
 	assert.Equal(t, "fizzbuzz", fizzbuzz(15))
 }
-
-func Test_should_contain_100_elements(t *testing.T) {
-}
