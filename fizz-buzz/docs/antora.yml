@@ -1,7 +1,0 @@
----
-name: fizz-buzz
-title: Fizz Buzz
-version: main
-start_page: ROOT:index.adoc
-nav:
-  - modules/ROOT/nav.adoc

@@ -1,1 +1,3 @@
 * xref:index.adoc[]
+* Exercises
+** xref:fizz-buzz/index.adoc[]

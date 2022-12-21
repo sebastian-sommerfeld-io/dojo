@@ -1,3 +1,11 @@
+= Fizz Buzz
+Sebastian Sommerfeld <sebastian@sommerfeld.io>
+:project-name: dojo
+:url-project: https://github.com/sebastian-sommerfeld-io/{project-name}
+:github-actions-url: {url-project}/actions/workflows
+:job-ci: ci-fizz-buzz.yml
+:badge: badge.svg
+
 Coding exercise to practice TDD and get in touch with link:https://go.dev[Go].
 
 image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-url}/{job-ci}]
