@@ -12,10 +12,16 @@
     "docs/modules/*/partials/*",
     "docs/modules/*/partials/**",
 
-    "resources/**",
-
-    "src/main/**",
-    "src/test/**",
+    "**/docs/modules/*/assets/attachments/**",
+    "**/docs/modules/*/assets/images/**",
+    "**/docs/modules/*/examples/*",
+    "**/docs/modules/*/examples/**",
+    "**/docs/modules/*/pages/*",
+    "**/docs/modules/*/pages/**",
+    "**/docs/modules/*/partials/*",
+    "**/docs/modules/*/partials/**",
+    "**/src/main/**",
+    "**/src/test/**",
 
     "node_modules/**",
     "target/**"
