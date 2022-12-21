@@ -1,6 +1,6 @@
 Coding exercise to practice TDD and get in touch with link:https://go.dev[Go].
 
-image:{github-actions-url}/{job-generate-docs}/{badge}[Github Badge, link={github-actions-url}/{job-generate-docs}]
+image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-url}/{job-ci}]
 
 * Github Repository -> {url-project}
 * Documentation -> https://www.sommerfeld.io/docs/dojo/{project-name}/main

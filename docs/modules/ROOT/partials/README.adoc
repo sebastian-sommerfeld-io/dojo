@@ -1,7 +1,7 @@
 A learning and training ground to practice programming skills like TDD with different languages.
 
 image:{github-actions-url}/{job-generate-docs}/{badge}[Github Badge, link={github-actions-url}/{job-generate-docs}]
-image:{github-actions-url}/{lint}/{badge}[Github Badge, link={github-actions-url}/{lint}]
+image:{github-actions-url}/{job-lint}/{badge}[Github Badge, link={github-actions-url}/{job-lint}]
 
 * Github Repository -> {url-project}
 * Documentation -> https://www.sommerfeld.io/docs/dojo/{project-name}/main
