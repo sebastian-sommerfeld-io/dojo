@@ -61,4 +61,8 @@ if [ ! -f go.mod ]; then
 fi
 
 echo -e "$LOG_INFO Run tests"
-go test
+go test .
+
+echo -e "$LOG_INFO Run app"
+#go build .
+go run .
