@@ -43,6 +43,7 @@ function go() {
     --volume /etc/passwd:/etc/passwd:ro \
     --volume /etc/group:/etc/group:ro \
     --user "$(id -u):$(id -g)" \
+    --volume "/home/$USER/.cache:/home/$USER/.cache" \
     --volume "$(pwd):$(pwd)" \
     --workdir "$(pwd)" \
     golang:1.20-rc-alpine go "$@"
@@ -50,4 +51,14 @@ function go() {
 
 
 echo -e "$LOG_INFO Run ${P}Fizz Buzz${D}"
-go version
+
+if [ ! -f go.mod ]; then
+  readonly MODULE="sebastian-sommerfeld-io/dojo/fizzbuzz"
+
+  echo -e "$LOG_INFO Initialize $MODULE"
+  go mod init "$MODULE"
+  go mod tidy
+fi
+
+echo -e "$LOG_INFO Run tests"
+go test
