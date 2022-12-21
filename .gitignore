@@ -14,3 +14,7 @@ node_modules
 *.token
 *.pass
 *.user
+
+# Go
+go.mod
+go.sum

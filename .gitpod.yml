@@ -1,5 +1,7 @@
 ---
 tasks:
+  - name: Set merge strategy for git
+    init: git config pull.rebase false
   - name: Install yamllint
     init: sudo apt-get install -y yamllint
   - name: Install jarvis
