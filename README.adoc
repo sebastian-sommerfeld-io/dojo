@@ -1,0 +1,16 @@
+= dojo
+
+A learning and training ground to practice programming skills like TDD with different languages.
+
+A dojo is a hall or place for immersive learning or meditation. This is traditionally in the field of martial arts, but has been seen increasingly in other fields, such as meditation and software development. The term literally means "place of the Way" in Japanese. A coding dōjō is a space and associated technique for groups to practice computer programming skills.
+
+For katas and exercises see https://cyber-dojo.org/creator/choose_problem.
+
+== Guidelines and Conventions
+. Create a dedicated directory for each kata in the project root.
+. Create a dedicated Github Actions workflow for each kata. The goal is to have one workflow per kata.
+. Put linter definitions and docs inside the kata folder.
+. Run everything in containers!
+
+== Contact
+Feel free to contact me via sebastian@sommerfeld.io or visit my website https://www.sommerfeld.io.
