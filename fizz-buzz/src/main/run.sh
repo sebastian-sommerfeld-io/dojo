@@ -44,12 +44,13 @@ function go() {
     echo -e "$LOG_ERROR exit" && exit 8
   fi
 
+  mkdir -p "/tmp/$USER/.cache"
+
   docker run --rm \
     --volume /etc/passwd:/etc/passwd:ro \
     --volume /etc/group:/etc/group:ro \
     --user "$(id -u):$(id -g)" \
-    --volume "/home/$USER/.cache:/home/$USER/.cache" \
-    --volume "/home/$USER/.cache/go-build:/home/$USER/.cache/go-build" \
+    --volume "/tmp/$USER/.cache:/home/$USER/.cache" \
     --volume "$(pwd):$(pwd)" \
     --workdir "$(pwd)" \
     golang:1.20-rc-alpine go "$@"
