@@ -16,5 +16,5 @@ node_modules
 *.user
 
 # Go
-go.mod
-go.sum
+*go.mod
+*go.sum
