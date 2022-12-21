@@ -17,6 +17,11 @@
 # ```
 
 
+# Avoid 'unbound variable' errors in pipeline
+readonly LOG_ERROR="[\e[1;31mERROR\e[0m]"
+readonly LOG_INFO="[\e[34mINFO\e[0m]"
+
+
 set -o errexit
 set -o pipefail
 set -o nounset
@@ -50,8 +55,6 @@ function go() {
 }
 
 
-echo -e "$LOG_INFO Run ${P}Fizz Buzz${D}"
-
 if [ ! -f go.mod ]; then
   readonly MODULE="sebastian-sommerfeld-io/dojo/fizzbuzz"
 
@@ -59,6 +62,9 @@ if [ ! -f go.mod ]; then
   go mod init "$MODULE"
   go mod tidy
 fi
+
+echo -e "$LOG_INFO Validate go code"
+go vet
 
 echo -e "$LOG_INFO Run tests"
 go test .
