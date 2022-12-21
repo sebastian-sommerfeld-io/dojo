@@ -49,6 +49,7 @@ function go() {
     --volume /etc/group:/etc/group:ro \
     --user "$(id -u):$(id -g)" \
     --volume "/home/$USER/.cache:/home/$USER/.cache" \
+    --volume "/home/$USER/.cache/go-build:/home/$USER/.cache/go-build" \
     --volume "$(pwd):$(pwd)" \
     --workdir "$(pwd)" \
     golang:1.20-rc-alpine go "$@"
