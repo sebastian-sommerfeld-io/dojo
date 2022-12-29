@@ -1,1 +1,1 @@
-* xref:AUTO-GENERATED:bash-docs/fizz-buzz/src/main/run-sh.adoc[fizz-buzz/src/main/run.sh]
+* `xref:AUTO-GENERATED:bash-docs/fizz-buzz/src/main/run-sh.adoc[fizz-buzz/src/main/run.sh]`
