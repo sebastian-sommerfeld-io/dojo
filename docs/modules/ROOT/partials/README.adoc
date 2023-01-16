@@ -4,6 +4,7 @@ image:{github-actions-url}/{job-generate-docs}/{badge}[Github Badge, link={githu
 image:{github-actions-url}/{job-lint}/{badge}[Github Badge, link={github-actions-url}/{job-lint}]
 
 * Github Repository -> {url-project}
+* Code Scanner -> https://sonarcloud.io/project/overview?id=sebastian-sommerfeld-io_{project-name}
 * Documentation -> https://www.sommerfeld.io/docs/dojo/{project-name}/main
 * Where to file issues -> {url-project}/issues
 
