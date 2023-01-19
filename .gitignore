@@ -15,9 +15,5 @@ node_modules
 *.pass
 *.user
 
-# Go
-*go.mod
-*go.sum
-
 # sonarcloud.io
 .scannerwork
