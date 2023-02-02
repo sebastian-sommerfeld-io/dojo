@@ -65,12 +65,13 @@ if [ ! -f go.mod ]; then
   go mod tidy
 fi
 
-echo -e "$LOG_INFO Validate go code"
-go vet
+echo -e "$LOG_INFO Format code"
+go fmt ./...
 
 echo -e "$LOG_INFO Run tests"
-go test .
+go test ./...
 
 echo -e "$LOG_INFO Run app"
-#go build .
 go run .
+
+#go build .
